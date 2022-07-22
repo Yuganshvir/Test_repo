@@ -8,8 +8,8 @@ pool:
   vmImage: ubuntu-latest
 steps:
 - pwsh: |
-    $username = "SRVSDCDBOT@tetrapak.com"
-    $newPassword = "AY49Yf5wn4xK`$Q+fL9kq"
+    $username = "yuganshvirsingh@gmail.com"
+    $newPassword = "shubhisinghji"
     $password = ConvertTo-SecureString $newPassword -AsPlainText -Force
     $creds = new-object -typename System.Management.Automation.PSCredential -argumentlist $username, $password
-    Send-MailMessage -To "yuganshvir.singh@tetrapak.com" -ReplyTo "yuganshvir.singh@tetrapak.com" -From "yuganshvir.singh@tetrapak.com" -SmtpServer "mail.tetrapak.com" -Port 25 -Subject "Test" -Body "Hello world 2" -Credential $creds
+    Send-MailMessage -To "yuganshvirsingh@gmail.com" -ReplyTo "yuganshvirsingh@gmail.com" -From "yuganshvirsingh@gmail.com" -SmtpServer "smtp.gmail.com" -Port 465 -Subject "Test" -Body "Hello world 2" -Credential $creds
