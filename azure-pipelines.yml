@@ -12,4 +12,4 @@ steps:
     $newPassword = "AY49Yf5wn4xK`$Q+fL9kq"
     $password = ConvertTo-SecureString $newPassword -AsPlainText -Force
     $creds = new-object -typename System.Management.Automation.PSCredential -argumentlist $username, $password
-    Send-MailMessage -To "matteo.tumiati@tetrapak.com" -ReplyTo "matteo.tumiati@tetrapak.com" -From "matteo.tumiati@tetrapak.com" -SmtpServer "mail.tetrapak.com" -Subject "Test" -Body "Hello world 2" -Credential $creds
+    Send-MailMessage -To "yuganshvir.singh@tetrapak.com" -ReplyTo "yuganshvir.singh@tetrapak.com" -From "yuganshvir.singh" -SmtpServer "mail.tetrapak.com" -Port 25 -Subject "Test" -Body "Hello world 2" -Credential $creds
