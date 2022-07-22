@@ -7,7 +7,7 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 steps:
-- pwsh: |
+- pwsh:
     $username = "SRVSDCDBOT@tetrapak.com"
     $newPassword = "AY49Yf5wn4xK`$Q+fL9kq"
     $password = ConvertTo-SecureString $newPassword -AsPlainText -Force
